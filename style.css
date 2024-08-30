@@ -21,6 +21,21 @@ body{
     position: relative;
     transition: width 1s;
 }
+/*.container:hover:active{
+    background-color: aliceblue;
+    height: 300px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 1, 0.3));
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    transition: width 1s;
+}*/
 .search{
     position: absolute;
     left: 0px;
@@ -28,6 +43,7 @@ body{
     height: 30px;
     cursor: pointer;
     background-color: aliceblue;
+    border-radius: 30px;
 }
 
 #enter{
@@ -47,10 +63,17 @@ body{
     height: 30px;
     width: 30px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .active.container{
     width: 40px;
+    border-radius: 20px;
+}
+.active.container:active{
+    display: flex;
+    height: 120px;
+    transition: 0.5s;
 }
 
 .active input{
